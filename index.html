@@ -6,184 +6,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <title>Event-Qr - Digital Invitations</title>
+    <style>
+        .sentinel {
+            height: 1px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FFA500;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #FFA500;
+            color: white;
+            padding: 1rem 0;
+            font-size: 2rem;
+        }
+
+        .hero {
+            background-color: #f1f1f1;
+            padding: 2rem 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .card-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0.8rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #FFA500;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #FFA500;
+            padding: 1rem 0;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <!-- <div class="logo">Tiktok Treasures</div> -->
-
+            <h1>TikTok Treasures</h1>
         </nav>
     </header>
-    <h1 style="background-color: #FFA500;text-align: center;color: white;">TikTok Treasures</h1>
 
-    <div>
-        <main>
-            <section class="hero">
-                <section class="cards">
-                    <div class="card" data-url="https://amzn.to/41jqvnt">
-                        <img data-src="https://m.media-amazon.com/images/I/61TThXTFOtL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Vacuum Insulated Tumbler</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/3L97ezD">
-                        <img data-src="https://m.media-amazon.com/images/I/61eM+QPvXsL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Mini Card Mobile Phone</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/3omlH2e">
-                        <img data-src="https://m.media-amazon.com/images/I/61NCz9l8C+L._SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Mighty Patch</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/3MMUhwC">
-                        <img data-src="https://m.media-amazon.com/images/I/31rvP1cDZyL.jpg" alt="Image description">
-                        <div class="card-title">SOL DE JANEIRO Body Fragrance Mist</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/41hjFPy">
-                        <img data-src="https://m.media-amazon.com/images/I/81rgP4d1-+L._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Water Repellent Wiper Blades</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/41poEOg">
-                        <img data-src="https://m.media-amazon.com/images/I/91QjYtM4u3L._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Car Seat Headrest Hook</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/41BqRFJ">
-                        <img data-src="https://m.media-amazon.com/images/I/91o7xbR0w+S._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">SABRE Pepper Spray</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/43D3H3T">
-                        <img data-src="https://m.media-amazon.com/images/I/71lssfUVmeL._SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">TruSkin Vitamin C Serum for Face</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/41pGQaw">
-                        <img data-src="https://m.media-amazon.com/images/I/71YLxhnPUxL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Cleaning Gel for Car</div>
-                        <div class="sentinel"></div>
-                    </div>
-                    <div class="card" data-url="https://amzn.to/41EH0dO">
-                        <img data-src="https://m.media-amazon.com/images/I/71MVAWZYjVL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">DASH Mini Maker for Individual Waffles</div>
-                        <div class="sentinel"></div>
-                    </div>
+    <main>
+        <section class="hero">
+            <section class="cards">
+                <!-- Add cards here -->
+                <div class="card" data-url="https://amzn.to/41jqvnt">
+                    <img data-src="https://m.media-amazon.com/images/I/61TThXTFOtL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Vacuum Insulated Tumbler</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/3L97ezD">
+                    <img data-src="https://m.media-amazon.com/images/I/61eM+QPvXsL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Mini Card Mobile Phone</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/3omlH2e">
+                    <img data-src="https://m.media-amazon.com/images/I/61NCz9l8C+L._SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Mighty Patch</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/3MMUhwC">
+                    <img data-src="https://m.media-amazon.com/images/I/31rvP1cDZyL.jpg" alt="Image description">
+                    <div class="card-title">SOL DE JANEIRO Body Fragrance Mist</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/41hjFPy">
+                    <img data-src="https://m.media-amazon.com/images/I/81rgP4d1-+L._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Water Repellent Wiper Blades</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/41poEOg">
+                    <img data-src="https://m.media-amazon.com/images/I/91QjYtM4u3L._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Car Seat Headrest Hook</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/41BqRFJ">
+                    <img data-src="https://m.media-amazon.com/images/I/91o7xbR0w+S._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">SABRE Pepper Spray</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/43D3H3T">
+                    <img data-src="https://m.media-amazon.com/images/I/71lssfUVmeL._SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">TruSkin Vitamin C Serum for Face</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/41pGQaw">
+                    <img data-src="https://m.media-amazon.com/images/I/71YLxhnPUxL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Cleaning Gel for Car</div>
+                    <div class="sentinel"></div>
+                </div>
+                <div class="card" data-url="https://amzn.to/41EH0dO">
+                    <img data-src="https://m.media-amazon.com/images/I/71MVAWZYjVL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">DASH Mini Maker for Individual Waffles</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3KKIPz2">
-                        <img data-src="https://m.media-amazon.com/images/I/71Uagd+PA0S._AC_UL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">BRONAX Cloud Slippers for Women and Men</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/3KKIPz2">
+                    <img data-src="https://m.media-amazon.com/images/I/71Uagd+PA0S._AC_UL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">BRONAX Cloud Slippers for Women and Men</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/40k9qZe">
-                        <img data-src="https://m.media-amazon.com/images/I/814UPKFeyuL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Cast Iron Reversible Griddle for Rogue</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/40k9qZe">
+                    <img data-src="https://m.media-amazon.com/images/I/814UPKFeyuL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Cast Iron Reversible Griddle for Rogue</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3MUorhA">
-                        <img data-src="https://m.media-amazon.com/images/I/61NfL0n7uPL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">NERF Ultra Strike Motorized Blaster</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/3MUorhA">
+                    <img data-src="https://m.media-amazon.com/images/I/61NfL0n7uPL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">NERF Ultra Strike Motorized Blaster</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/41mMaeK">
-                        <img data-src="https://m.media-amazon.com/images/I/71rQbVHsdQL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Slide Wallet Size Unlocked Mini Cell Phone</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/41mMaeK">
+                    <img data-src="https://m.media-amazon.com/images/I/71rQbVHsdQL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Slide Wallet Size Unlocked Mini Cell Phone</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3UOSZ6n">
-                        <img data-src="https://m.media-amazon.com/images/I/71jZnhjDJYL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Led Strip Lights</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/3UOSZ6n">
+                    <img data-src="https://m.media-amazon.com/images/I/71jZnhjDJYL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Led Strip Lights</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3ooPvLC">
-                        <img data-src="https://m.media-amazon.com/images/I/713x-AxAYTL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Newmowa 60 LED</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/3ooPvLC">
+                    <img data-src="https://m.media-amazon.com/images/I/713x-AxAYTL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Newmowa 60 LED</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/41G9fZhn">
-                        <img data-src="https://m.media-amazon.com/images/I/81VfBSdIPvL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Wireless Charger, 3 in 1</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/41G9fZhn">
+                    <img data-src="https://m.media-amazon.com/images/I/81VfBSdIPvL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Wireless Charger, 3 in 1</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3MVHY10">
-                        <img data-src="https://m.media-amazon.com/images/I/61Y1P6uIRFL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">DJI Mini 3 Pro</div>
-                        <div class="sentinel"></div>
-                    </div>
+                <div class="card" data-url="https://amzn.to/3MVHY10">
+                    <img data-src="https://m.media-amazon.com/images/I/61Y1P6uIRFL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">DJI Mini 3 Pro</div>
+                    <div class="sentinel"></div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3MVHY10">
-                        <img data-src="https://m.media-amazon.com/images/I/61MnDNHro4L._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Hamilton Beach Shake</div>
-                        <div class="sentinel"></div>
+                <div class="card" data-url="https://amzn.to/3MVHY10">
+                    <img data-src="https://m.media-amazon.com/images/I/61MnDNHro4L._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Hamilton Beach Shake</div>
+                    <div class="sentinel"></div>
 
-                    </div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/41FStcO">
-                        <img data-src="https://m.media-amazon.com/images/I/61ytVXRzXHL._AC_SL1000_.jpg"
-                            alt="Image description">
-                        <div class="card-title">All-New Echo Dot</div>
-                        <div class="sentinel"></div>
+                <div class="card" data-url="https://amzn.to/41FStcO">
+                    <img data-src="https://m.media-amazon.com/images/I/61ytVXRzXHL._AC_SL1000_.jpg"
+                        alt="Image description">
+                    <div class="card-title">All-New Echo Dot</div>
+                    <div class="sentinel"></div>
 
-                    </div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3orz5Sw">
-                        <img data-src="https://m.media-amazon.com/images/I/71TWVHQ92sL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">Bug Zapper Indoor</div>
-                        <div class="sentinel"></div>
+                <div class="card" data-url="https://amzn.to/3orz5Sw">
+                    <img data-src="https://m.media-amazon.com/images/I/71TWVHQ92sL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Bug Zapper Indoor</div>
+                    <div class="sentinel"></div>
 
-                    </div>
+                </div>
 
-                    <div class="card" data-url="https://amzn.to/3mN1i5O">
-                        <img data-src="https://m.media-amazon.com/images/I/81wfPgCuYFL._AC_SL1500_.jpg"
-                            alt="Image description">
-                        <div class="card-title">BLUE GINKGO Over the Sink Colander Strainer Basketr</div>
-                        <div class="sentinel"></div>
+                <div class="card" data-url="https://amzn.to/3mN1i5O">
+                    <img data-src="https://m.media-amazon.com/images/I/81wfPgCuYFL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">BLUE GINKGO Over the Sink Colander Strainer Basketr</div>
+                    <div class="sentinel"></div>
 
-                    </div>
+                </div>
 
+                <div class="card" data-url="https://amzn.to/43HRXNr">
+                    <img data-src="https://m.media-amazon.com/images/I/518bZl-y7NL._AC_SL1500_.jpg"
+                        alt="Image description">
+                    <div class="card-title">Oncjeys Unisex Shark Slippers</div>
+                    <div class="sentinel"></div>
 
-
-                </section>
-
-
+                </div>
             </section>
-        </main>
-
-    </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Event-Qr. All rights reserved.</p>
     </footer>
-
-
 
     <script>
         function observeSentinel() {
@@ -230,126 +319,6 @@
             });
         });
     </script>
-
 </body>
-
-<style>
-    .sentinel {
-        height: 1px;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    header {
-        background-color: #FFA500;
-        padding: 1rem 0;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .logo {
-        color: #fff;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-    }
-
-    .nav-links li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0 1rem;
-    }
-
-    .hero {
-        background-color: #FFA500;
-        min-height: calc(100vh - 2rem);
-        /* subtract header and footer height */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 0;
-        /* add some padding to the top and bottom */
-    }
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 1200px;
-        margin: 2rem auto;
-    }
-
-    .card {
-        position: relative;
-        width: 470px;
-        height: 270px;
-        margin: 1rem;
-        background-color: #fff;
-        overflow: hidden;
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(232, 221, 221, 0.067);
-    }
-
-    .card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-
-    .card-title {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #FFA500;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .hero-text {
-        text-align: center;
-        background-color: #FFA500;
-        padding: 2rem 0;
-        color: #fff;
-        font-size: 3rem;
-        font-weight: bold;
-        margin-bottom: 2rem;
-    }
-
-    /* Add this new block to your existing CSS */
-    .card-price {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        padding: 0.5rem;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-</style>
 
 </html>
